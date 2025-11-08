@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glamour Store - Maquillaje y Perfumes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-gem"></i>
+                <h1>Glamour Store</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#carrito" class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Descubre tu Belleza</h2>
+            <p>Los mejores productos de maquillaje y perfumes</p>
+        </div>
+    </section>
+
+    <!-- Filtros -->
+    <section class="filters" id="productos">
+        <div class="container">
+            <h2>Nuestros Productos</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="todos">Todos</button>
+                <button class="filter-btn" data-category="ojos">Ojos</button>
+                <button class="filter-btn" data-category="labios">Labios</button>
+                <button class="filter-btn" data-category="rostro">Rostro</button>
+                <button class="filter-btn" data-category="sombras">Sombras</button>
+                <button class="filter-btn" data-category="perfumes">Perfumes</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos -->
+    <section class="productos">
+        <div class="container">
+            <div class="productos-grid" id="productosGrid"></div>
+        </div>
+    </section>
+
+    <!-- Carrito Modal -->
+    <div class="modal" id="carritoModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Tu Carrito</h2>
+            <div id="carritoItems"></div>
+            <div class="carrito-total">
+                <h3>Total: <span id="totalCarrito">Bs 0.00</span></h3>
+            </div>
+            <div class="carrito-actions">
+                <button class="btn-vaciar" id="vaciarCarrito">Vaciar Carrito</button>
+                <button class="btn-comprar" id="realizarCompra">Realizar Pedido por WhatsApp</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Glamour Store. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="scritp.js"></script>
+</body>
+</html>
